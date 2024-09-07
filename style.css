@@ -1,29 +1,65 @@
-*{
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
-    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
 }
-.desktop-header-container{
-    display: flex;
-    width: 100vh;
-    
+.desktop-header-container {
+  display: flex;
+  width: 100vh;
 }
-.myntra-logo-container{
-    width: 53px;
-    height: 36px;
-    margin-left: 4%;
-    cursor: pointer;
-    
+.myntra-logo-container {
+  width: 53px;
+  height: 36px;
+  margin-left: 4%;
+  cursor: pointer;
 }
-.myntra-logo{
-    width: 100%;
-    height: 100%;
+.myntra-logo {
+  width: 100%;
+  height: 100%;
 }
-
 
 /* Footer */
-.desktop-footer-container{
-    display:flex;
-        
+.desktop-footer-container {
+  max-width: 1080px;
+  margin: auto;
+  min-width: 980px;
+}
+.generic-info{
+    display: flex;
+}
+.shopping-link>a,.customer-policies>a{
+    display: block ;
+}
+.shopping-link{
+  width: 155px;
+  padding-right: 20px;
+}
+
+.customer-policies {
+  width: 262px;
+}
+.experience-myntra {
+  width: 380px;
+  padding-right: 20px;
+}
+.android-download-logo{
+    width: 139.83px;
+    margin-right: 10px;
+}
+.ios-download-logo{
+    width: 122.53px;
+    margin-right: 10px;
+}
+.keep-in-touch-logo{
+    width: 20px;
+    margin-right: 15px;
+}
+.promises {
+  width: 250px;
+}
+.promises-section>img{
+    width: 48px;
+    float: left;
 }
