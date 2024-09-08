@@ -5,19 +5,81 @@
   font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif;
 }
+/* Header */
+
 .desktop-header-container {
   display: flex;
   width: 100vh;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
 }
 .myntra-logo-container {
   width: 53px;
   height: 36px;
   margin-left: 4%;
-  cursor: pointer;
 }
 .myntra-logo {
-  width: 100%;
-  height: 100%;
+  width: inherit;
+  height: inherit;
+  cursor: pointer;
+}
+.nav-bar {
+  min-width: 515px;
+  margin-left: 1%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar > a {
+  color: #282c3f;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 80px;
+}
+.nav-bar > a > sup {
+  top: -0.4rem;
+  font-size: 10px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ff3f6c;
+}
+
+.querry {
+  min-width: 400px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background: #f5f5f6;
+}
+.querry > .search-logo {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin: 10px;
+  /* color: #282c3f; */
+}
+.querry > .search-input {
+  background: #f5f5f6;
+  border-style:none;
+  height: 40px;
+  flex-grow: 1;
+}
+
+.actions {
+  display: flex;
+}
+.actions img {
+  width: 24px;
+  height: 24px;
+ 
 }
 
 /* Footer */
@@ -26,13 +88,14 @@
   margin: auto;
   min-width: 980px;
 }
-.generic-info{
-    display: flex;
+.generic-info {
+  display: flex;
 }
-.shopping-link>a,.customer-policies>a{
-    display: block ;
+.shopping-link > a,
+.customer-policies > a {
+  display: block;
 }
-.shopping-link{
+.shopping-link {
   width: 155px;
   padding-right: 20px;
 }
@@ -44,22 +107,22 @@
   width: 380px;
   padding-right: 20px;
 }
-.android-download-logo{
-    width: 139.83px;
-    margin-right: 10px;
+.android-download-logo {
+  width: 139.83px;
+  margin-right: 10px;
 }
-.ios-download-logo{
-    width: 122.53px;
-    margin-right: 10px;
+.ios-download-logo {
+  width: 122.53px;
+  margin-right: 10px;
 }
-.keep-in-touch-logo{
-    width: 20px;
-    margin-right: 15px;
+.keep-in-touch-logo {
+  width: 20px;
+  margin-right: 15px;
 }
 .promises {
   width: 250px;
 }
-.promises-section>img{
-    width: 48px;
-    float: left;
+.promises-section > img {
+  width: 48px;
+  float: left;
 }
