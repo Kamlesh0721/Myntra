@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myntra</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -26,26 +28,36 @@
 
             <div class="querry">
 
-                <img class="search-logo" src="./assets/Header/Search/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"
-                    alt="search_logo">
-
+                <span class="material-symbols-outlined search-logo">search
+                </span>
                 <input class="search-input" type="text" placeholder="Search for products,brands and more">
             </div>
 
-            <div class="actions">
-                <div class="profile">
-                    <img src="./assets/Header/Actions/person_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="profile">
-                    <span>profile</span>
+            <div class="actions-bar">
+                <div class="action-container">
+                    <a id="person-icon" href="#">
+                        <span class="material-symbols-outlined action-icon">
+                            person
+                        </span>
+                        <label for="wishlist-icon">Profile</label>
+                    </a>
                 </div>
-                <div class="wishlist">
-                    <img src="./assets/Header/Actions/favorite_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"
-                        alt="wishlist">
-                    <span>wishlist</span>
+                <div class="action-container">
+                    <a id="wishlist-icon" href="#">
+                        <span class="material-symbols-outlined action-icon">
+                            Favorite
+                        </span>
+                        <label for="wishlist-icon">Wishlist</label>
+                    </a>
                 </div>
-                <div class="bag">
-                    <img src="./assets/Header/Actions/shopping_bag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"
-                        alt="cart">
-                    <span>bag</span>
+                <div class="action-container">
+                    <a id="bag-icon" href="#"> 
+                        <span class="material-symbols-outlined action-icon">
+                            shopping_bag
+                        </span>
+                        <label for="bag-icon">Bag</label>
+                    </a>
+
                 </div>
             </div>
         </div>
