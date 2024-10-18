@@ -129,27 +129,33 @@
 
 /* Body */
 
-.offer {
-  margin: 0 auto;
-  height: auto;
-  max-width: 100%;
+.offer-img {
+  display: flex;
+  width: 100%; /* Ensure the container takes the full width */
   padding: 0 50px;
+  margin: 0;
 }
 
-.offer img {
-  max-width: 100%;
+.offer-img img {
+  width: 25%; /* Each image takes up 25% of the total width */
+  height: auto;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
+
 
 .banner {
   display: flex;
 }
 
-.banner-1,
-.banner-2 {
+.banner-left,
+.banner-right{
   flex: 1;
 }
 .banner img {
-  max-width: 100%;
+  width: 100%;
 }
 /* Footer */
 .desktop-footer-container {
