@@ -5,14 +5,20 @@
   font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif;
 }
-/* Header */
 
-.desktop-header-container {
+/* Header */
+.desktop-header-container{
+  display: flex
+}
+.header-left,.header-right{
   display: flex;
-  width: 100vw;
-  justify-content: space-evenly;
+  width: 50vw;
+  justify-content: space-around;
   height: 80px;
   align-items: center;
+}
+.header-right{
+  justify-content: flex-end;
 }
 .myntra-logo-container {
   width: 53px;
@@ -31,6 +37,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 3px;
 }
 .nav-bar > a {
   color: #282c3f;
@@ -101,35 +108,47 @@
   margin: 20px;
   min-width: 194px;
   height: 40px;
+  
 }
 .action-container a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color:rgba(0, 0, 0, 0.893);
 }
 
 .action-icon {
   width: 24px;
   height: 24px;
+  font-weight: 200;
+}
+
+.action-container label{
+  font-size: small;
 }
 
 /* Body */
 
-.offer{
+.offer {
   margin: 0 auto;
   height: auto;
   max-width: 100%;
+  padding: 0 50px;
 }
 
-.offer img{
+.offer img {
   max-width: 100%;
 }
 
-.banner-1,.banner-2{
-    display: inline-block;
-   max-width:  45%;
+.banner {
+  display: flex;
 }
-.banner img{
+
+.banner-1,
+.banner-2 {
+  flex: 1;
+}
+.banner img {
   max-width: 100%;
 }
 /* Footer */
