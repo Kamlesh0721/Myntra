@@ -7,17 +7,18 @@
 }
 
 /* Header */
-.desktop-header-container{
-  display: flex
+.desktop-header-container {
+  display: flex;
 }
-.header-left,.header-right{
+.header-left,
+.header-right {
   display: flex;
   width: 50vw;
   justify-content: space-around;
   height: 80px;
   align-items: center;
 }
-.header-right{
+.header-right {
   justify-content: flex-end;
 }
 .myntra-logo-container {
@@ -108,13 +109,12 @@
   margin: 20px;
   min-width: 194px;
   height: 40px;
-  
 }
 .action-container a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color:rgba(0, 0, 0, 0.893);
+  color: rgba(0, 0, 0, 0.893);
 }
 
 .action-icon {
@@ -123,7 +123,7 @@
   font-weight: 200;
 }
 
-.action-container label{
+.action-container label {
   font-size: small;
 }
 
@@ -145,17 +145,38 @@
   border: none;
 }
 
-
 .banner {
   display: flex;
 }
 
 .banner-left,
-.banner-right{
+.banner-right {
   flex: 1;
 }
 .banner img {
   width: 100%;
+}
+
+/* .shop_by_category_heading{
+  max-width: 100vw;
+} */
+.shop_by_category_heading > img {
+  width: 100%;
+  height: auto;
+}
+
+.shop_by_category_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.shop_by_category_items a {
+  flex: 1 1 calc(16.66% - 10px); /* 6 images per row (100%/6 = 16.66%) minus the gap */
+  max-width: calc(16.66% - 10px);
+}
+.shop_by_category_items img {
+  width: 100%;
+  height: auto;
 }
 /* Footer */
 .desktop-footer-container {
